@@ -10,23 +10,40 @@
     <title>ANIMATION FORM</title>
 </head>
 
-<body class="body">
-<nav class="nav">
-        <a href="home.html" class="back">&lt;</a>
+<body class="body-chat">
+    <nav class="nav">
+        <a href="lectures.html" class="back">&lt;</a>
         <img src="img/fronter.png" alt="fronter text" class="page-logo">
         <i class="fas fa-search search"></i>
         <input type="search" name="search" placeholder="search..." class="input-search" id="searchBar">
     </nav>
 
-<aside class="videoWrapper">
-<a href="liveVideo.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/W9nZ6u15yis"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</a>
-</aside>
-<main class="main-section">
+    <aside class="videoWrapper">
+        <a href="liveVideo.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/W9nZ6u15yis" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </a>
+    </aside>
+
+    <main class="main-section main-chat">
+        <div class="chat-box">
+            <div class="comments me">
+                <p class="message">Can you repeat the last point again? I didn't get it</p>
+            </div>
+            <div class="comments classmates">
+                <p class="message">okay, so that is what we have to hand in?</p>
+            </div>
+            <div class="comments teacher">
+                <p class="message">No, the hand in is only a PDF with the links to your XD prototype and your website</p>
+                <p>if there is any question I will be contactable on the chat until 4pm. Thank you for today</p>
+            </div>
+        </div>
+
+        <div class="chat-keyboard">
+            <input type="text" name="message" id="message" placeholder="Type here..." class="chat-input">
+            <i class="fas fa-paper-plane send"></i>
+        </div>
 
 
-
-</main>
+    </main>
 
 
 
@@ -35,7 +52,7 @@
 
     <nav class="i-nav">
         <a href="home.html" class="home"><i class="icons fas fa-home"></i></a>
-        <a href="#" class="chat"><i class="icons fas fa-comment"></i></a>
+        <a href="home-chat.html" class="chat"><i class="icons fas fa-comment"></i></a>
         <a href="lectures.html" class="lectures active"><i class="icons fas fa-file-alt checked"></i></a>
     </nav>
 

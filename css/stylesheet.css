@@ -5,7 +5,7 @@
     margin: 0;
 }
 body{
-    background: rgb(8, 144, 232);
+    background: #0890e8;
 }
 
 a{
@@ -262,6 +262,7 @@ label{
     text-align: center;
     margin-bottom: 2em;
     padding: 0.5em 0;
+
 }
 
 .op-itmes:hover{
@@ -338,8 +339,6 @@ label{
 
 /*///////////////////Lectures//////////////*/
 
-.body{
-}
 
 .nav{
     display: grid;
@@ -354,7 +353,7 @@ label{
     padding: 0.5em;
     position: fixed;
     top: 0;
-    background: #0762c8;
+    background: #233249;
     z-index: 1;
 }
 
@@ -402,7 +401,7 @@ label{
 	padding-top: 25px;
 	height: 0;
     box-shadow: -1px -1px 1px #fff;
-    margin-top: 3em;
+    margin-top: 3.1em;
 
 }
 .videoWrapper iframe {
@@ -424,12 +423,13 @@ label{
 }
 
 .class-btn{
-    background:  #E3553D;
+    background: #E3553D;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
     padding: 0.2em 2em;
     margin: 2em 0;
+    font-weight: 700;
 
 }
 
@@ -497,7 +497,172 @@ label{
 }
 
 /*//////////////CHAT VIDEO /////////////////*/
+.body-chat{
+    background-image: url(../img/books2.jpg);
+}
+
+.chat-keyboard{
+    position: fixed;
+    bottom: 2.5em;
+    left: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.main-chat{
+    background: transparent;
+    background-size: contain;
+
+}
+
+.chat-box{
+    width: 100%;
+}
+
+.comments{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0.5em 0;
+    width: 80%;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    padding: 0.5em;
+}
+
+.me{
+    background-color: #6ac4fd;
+    float: left;
+}
+
+.classmates{
+    background-color: #98edb2;
+    float: right;
+}
+
+.teacher{
+    background-color: #fff;
+    float: left;
+}
+
+.chat-input{
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 1px #000;
+    width: 80%;
+    margin-left: 1em;
+    padding: 0.5em 0;
+}
+
+.chat-input::placeholder{
+    padding-left: 0.5em;
+    color: grey;
+}
+
+.send{
+    background-color: #233249;
+    border-radius: 50%;
+    padding: 0.5em;
+    color: #fff;
+}
+
+.fake-screen{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.nav-chat{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-areas:
+        "nav2"
+        "groups-nav";
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: #233249;
+}
+
+.nav2{
+    display: grid;
+    grid-template-columns: 0.4fr 0.8fr 1fr 0.8fr 0.4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "back . page-logo input-search search";
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 0.5em;
+    border-bottom: 1px solid #fff;
+}
+
+.groups-nav{
+    grid-area: groups-nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "recent students teachers admin";
+}
+
+.groups-items{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.recent{
+    grid-area: recent;
+}
+
+.students{
+    grid-area: students;
+}
+
+.teachers{
+    grid-area: teachers;
+}
+
+.admin{
+    grid-area: admin;
+}
+
+.video-box{
+    margin: 0 auto;
+    position: fixed;
+    bottom: 1.3em;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.close{
+    position: absolute;
+    top: 0.1em;
+    right: 0.2em;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+}
 
 
+
+
+/*/
+.keyboard-app{
+    position: fixed;
+    bottom: 8.5em;
+}
+
+*/
 
 
